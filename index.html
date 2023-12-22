@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert Money</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container-logo">
+            <img class="logo" src="./assets/logo.png" alt="logo-convert-money">
+        </div>
+
+        <h1>Conversor de Moedas</h1>
+    </header>
+
+    <div class="container-wrap">
+        <main>
+            <div class="container-date">
+                <p> Data da cotação</p>
+                <input id="outDate" class="current-date"></input>
+            </div>
+
+
+            <div class="container-itens">
+                <div class="container-currency">
+                    <p>Valor</p>
+                    <input value="0,00" dir="rtl" id="inputDinheiro" oninput="formatValueInput(this)"
+                        class="input-currency">
+
+                </div>
+
+                <label>
+                    <p> Converter <b>de</b></p>
+                    <select class="currency-converter" id="selct-one">
+
+                        <option value="BRL">Real Brasileiro </option>
+                        <option value="USD">Dólar Americano </option>
+                        <option value="EUR">Euro </option>
+                        <option value="GBP">Libra Esterlina </option>
+                    </select>
+
+                    <div class="container-left">
+                        <img id="currency-image-one-select" class="currency-image" src="./assets/real.png"
+                            alt="logo-moeda-a-converter">
+                        <p class="currency">Real</p>
+                        <p class="currency-value-to-convert">R$ 0,00</p>
+                    </div>
+
+
+
+                </label>
+
+                <div class="container-arrow-button">
+                    <button class="arrow-button">&#8644;</button>
+                </div>
+
+                <label>
+                    <p> Converter <b>para</b></p>
+                    <select class="currency-select" id="select-converter">
+
+                        <option value="USD">Dólar Americano</option>
+                        <option value="EUR">Euro </option>
+                        <option value="GBP">Libra Esterlina </option>
+                        <option value="BRL">Real Brasileiro </option>
+
+                    </select>
+
+
+
+                    <div class="container-rigth">
+                        <img id="currency-image-two-select" class="currency-image" src="./assets/dolar.png"
+                            alt="logo-moeda-convertida">
+                        <p class="currency" id="currency-name">Dólar</p>
+                        <p class="currency-value">US$ 0.0</p>
+                    </div>
+                </label>
+
+
+                <div class="container-arrow-button">
+                    <button class="convert-button">Converter</button>
+                </div>
+                
+            </div>
+
+
+
+        </main>
+
+        <div class="container-footer">
+            <ul>
+                <li>O cálculo efetuado tem caráter informativo e não substitui as disposições da norma cambial
+                    brasileira para casos específicos de conversão.</li>
+                <li>Conversões disponíveis para datas informadas a partir de 01/02/1999.</li>
+                <li>Para dias não úteis, assume-se a cotação do dia útil imediatamente anterior.</li>
+                <li>O Banco Central não assume qualquer responsabilidade pela não simultaneidade ou falta das
+                    informações prestadas, assim como por eventuais erros de paridades das moedas, ou qualquer
+                    outro, salvo a paridade relativa ao dólar dos Estados Unidos da América em relação ao Real.
+                    Igualmente, não se responsabiliza pelos atrasos ou indisponibilidade de serviços de
+                    telecomunicação, interrupção, falha ou pelas imprecisões no fornecimento dos serviços ou
+                    informações. Não assume, também, responsabilidade por qualquer perda ou dano oriundo de tais
+                    interrupções, atrasos, falhas ou imperfeições, bem como pelo uso inadequado das informações
+                    contidas na transação.</li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- 
+    <div class="container-logo">
+        <img class="logo" src="./assets/logo.png" alt="logo-convert-money">
+    </div>
+    <h1>Conversor de Moedas</h1>
+    <div class="container-wrap">
+        <main>
+            <div class="teste">
+                <div class="container-date">
+                    <label> Data da cotação</label>
+                    <input id="outDate" class="current-date"></input>
+                </div>
+
+            </div>
+
+            <div class="container-itens">
+                <div class="container-in-value">
+                    <label>
+                        <p>Valor</p>
+                        <input value="0,00" dir="rtl" id="inputDinheiro" oninput="formatValueInput(this)"
+                            class="input-currency">
+
+                    </label>
+                </div>
+
+                <div class="container-select">
+                    <label>
+                        <p> Converter <b>de</b></p>
+                        <select class="currency-converter" id="selct-one">
+
+                            <option value="BRL">Real Brasileiro </option>
+                            <option value="USD">Dólar Americano </option>
+                            <option value="EUR">Euro </option>
+                            <option value="GBP">Libra Esterlina </option>
+                        </select>
+
+                    </label>
+
+
+                    <div class="currency-box">
+                        <div>
+                            <img id="currency-image-one-select" class="currency-image" src="./assets/real.png"
+                                alt="logo-moeda-a-converter">
+                            <p class="currency">Real</p>
+                            <p class="currency-value-to-convert">R$ 0,00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="container-button">
+                    <button class="arrow-button">&#8644;</button>
+                </div>
+
+                <div class="container-select">
+                    <label>
+                        <p> Converter <b>para</b></p>
+                        <select class="currency-select" id="select-converter">
+
+                            <option value="USD">Dólar Americano</option>
+                            <option value="EUR">Euro </option>
+                            <option value="GBP">Libra Esterlina </option>
+                            <option value="BRL">Real Brasileiro </option>
+
+                        </select>
+                    </label>
+
+
+
+                    <div class="currency-box">
+                        <div>
+                            <img id="currency-image-two-select" class="currency-image" src="./assets/dolar.png"
+                                alt="logo-moeda-convertida">
+                            <p class="currency" id="currency-name">Dólar</p>
+                            <p class="currency-value">US$ 0.0</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-button">
+                    <button class="convert-button">Converter</button>
+                </div>
+
+            </div>
+
+
+        </main>
+
+
+      
+    </div> -->
+
+</body>
+<script src="./scripts.js"></script>
+
+
+</html>
