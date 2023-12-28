@@ -286,43 +286,6 @@ button:active {
         display: none;
     }
 
-/* theme base */
-/* .t-modal .modal-content{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-
-    border-bottom: 3px solid transparent;
-
-}
-
-.t-modal .modal-header{
-    padding: 30px 15px;
-      
-} */
-
-/* primary */
-/* .t-modal.primary .modal-header{
-    background-color: azure;
-    border: none;
-    
-}
-.t-modal.primary .modal-content{
-    border-color: red;
-}
-
-.t-modal.primary .modal-body{
-    background-color: azure;
-    border: none;
-    color: red;
-    font-size: 20px;
-    padding: 0 36px;
-
-}
-.t-modal.primary .modal-footer{
-    background-color: azure; */
-    /* border: none; */
 
 }
