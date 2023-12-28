@@ -287,7 +287,7 @@ button:active {
     }
 
 /* theme base */
-.t-modal .modal-content{
+/* .t-modal .modal-content{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
@@ -301,10 +301,10 @@ button:active {
 .t-modal .modal-header{
     padding: 30px 15px;
       
-}
+} */
 
 /* primary */
-.t-modal.primary .modal-header{
+/* .t-modal.primary .modal-header{
     background-color: azure;
     border: none;
     
@@ -322,7 +322,7 @@ button:active {
 
 }
 .t-modal.primary .modal-footer{
-    background-color: azure;
+    background-color: azure; */
     /* border: none; */
-}
+
 }

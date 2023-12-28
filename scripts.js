@@ -54,7 +54,7 @@ const convertValues = async () => {
 
                 //////////////////////////// First Select ///////////////////////////////////
                 if (currencyConverter.value == "BRL") {
-                    currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", { // formata moeda
+                    currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", { 
                         style: "currency",
                         currency: "BRL"
                     }).format(inputCurrencyValue, selectOne)
@@ -209,6 +209,8 @@ const convertValues = async () => {
 
 function invertValue() {
 
+    if (currencyConverter.value !== currencySelect.value) {
+
     const selectOne = document.querySelector(".currency-converter");
     const selectTwo = document.querySelector(".currency-select");
 
@@ -243,7 +245,7 @@ function invertValue() {
     convertValues()
     changeCurrencyConverter()
     chageCurrency()
-
+    }
 }
 
 
