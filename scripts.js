@@ -119,7 +119,7 @@ const convertValues = async () => {
 
 
 
-                ////////////////////// Two Select /////////////////////////////////////////
+                ////////////////////// Second Select /////////////////////////////////////////
 
                 if (currencySelect.value == "BRL") {
                     currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", { // formata moeda
